@@ -1,13 +1,49 @@
 {
-  "name"          : "rxjs-dojo",
-  "description"   : "Reactive Extensions for JavaScript bindings for the Dojo Toolkit",
-  "licenses"      : [ { "type": "Apache", "url": "http://www.apache.org/licenses/LICENSE-2.0" } ],  
-  "url"           : "http://github.com/reactive-extensions/l2o-js",
-  "keywords"      : ["RxJS", "Dojo"],
-  "author"        : "Matthew Podwysocki <matthewp@microsoft.com>",
-  "contributors"  : [],
-  "dependencies"  : [],
-  "lib"           : ".",
-  "main"          : "./lib/rx.dojo.js",
-  "version"       : "0.0.1"
+  "name": "rx-dojo",
+  "title": "Reactive Extensions for JavaScript bindings for the Dojo Toolkit",
+  "description": "Library for composing asynchronous and event-based operations in JavaScript extending the Dojo Toolkit",
+  "version": "1.1.0",
+  "homepage": "https://github.com/Reactive-Extensions/RxJS-Dojo",
+  "author": {
+    "name": "MS Open Tech",
+    "url": "https://github.com/Reactive-Extensions/RxJS-Dojo/blob/master/authors.txt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Reactive-Extensions/RxJS-Dojo.git"
+  },
+  "licenses": [
+    {
+      "type": "Apache License, Version 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  ],
+  "jam": {
+    "main": "rx.dojo.js"
+  },  
+  "dependencies": {
+    "rx": "*",
+    "dojo": "*"
+  },
+  "devDependencies": {
+    "grunt-cli": "*",
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-qunit": "*",
+    "grunt-contrib-watch": "*"
+  },
+  "keywords": [
+    "Reactive",
+    "LINQ",
+    "Collections",
+    "Dojo",
+    "RxJS",
+    "Rx"
+  ],
+  "main": "rx.jquery.node.js",
+  "scripts": {
+    "test": "grunt"
+  }  
 }

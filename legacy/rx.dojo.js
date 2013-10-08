@@ -19,10 +19,10 @@
     ,   AsyncSubject = root.AsyncSubject
     ,  observableCreate = Observable.create;
 
-    Observable.fromDojoEvent = function (dojoObject, eventType, context, dontFix) {
+    rxDojo.connect = function (dojoObject, eventType, context, dontFix) {
         return observableCreate(function (observer) {
-            var handler = function (eventObject) {
-                observer.onNext(eventObject);
+            function handler (e) {
+                observer.onNext(e);
             },
             handle = dojo.connect(dojoObject, eventType, context, handler, dontFix);
             return function () {

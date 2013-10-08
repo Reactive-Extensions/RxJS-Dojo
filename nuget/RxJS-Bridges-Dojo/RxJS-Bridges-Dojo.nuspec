@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>RxJS-Bridges-Dojo</id>
+    <title>Reactive Extensions for JavaScript - Bridges to the Dojo Toolkit</title>
+    <!-- Automatically updated by build, keeping fixed dev build number here in case of local build -->
+    <version>1.1.0</version>
+    <authors>Microsoft Open Technologies</authors>
+    <description>This project provides Reactive Extensions for JavaScript (RxJS) bindings for the Dojo Toolkit to abstract over the event binding and Ajax requests.</description>
+    <projectUrl>https://github.com/Reactive-Extensions/RxJS-Dojo</projectUrl>
+    <iconUrl>http://go.microsoft.com/fwlink/?LinkId=261274</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>
+    <language>en-US</language>
+    <tags>Rx RxJS Reactive Extensions Observable Dojo</tags>
+    <dependencies>
+      <!-- Automatically updated by build, keeping fixed dev build number here in case of local build -->
+      <dependency id="RxJS-Main" version="2.1" />
+      <dependency id="RxJS-Binding" version="2.1" />
+      <dependency id="dojo" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\..\rx.dojo.js" target="content\Scripts\rx.dojo.js" />
+    <file src="..\..\rx.dojo.min.js" target="content\Scripts\rx.dojo.min.js" />
+  </files>
+</package>
