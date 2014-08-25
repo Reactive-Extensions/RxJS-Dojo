@@ -2,7 +2,7 @@
   "name": "rx-dojo",
   "title": "Reactive Extensions for JavaScript bindings for the Dojo Toolkit",
   "description": "Library for composing asynchronous and event-based operations in JavaScript extending the Dojo Toolkit",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "homepage": "https://github.com/Reactive-Extensions/RxJS-Dojo",
   "author": {
     "name": "MS Open Tech",
@@ -19,7 +19,7 @@
     }
   ],
   "jam": {
-    "main": "rx.dojo.js"
+    "main": "dist/rx.dojo.js"
   },  
   "dependencies": {
     "rx": "*",
@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "grunt-cli": "*",
-    "grunt": "~0.4.1",
+    "grunt": "*",
     "grunt-contrib-jshint": "*",
     "grunt-contrib-uglify": "*",
     "grunt-contrib-concat": "*",
@@ -42,7 +42,7 @@
     "RxJS",
     "Rx"
   ],
-  "main": "rx.jquery.node.js",
+  "main": "dist/rx.dojo.js",
   "scripts": {
     "test": "grunt"
   }  
